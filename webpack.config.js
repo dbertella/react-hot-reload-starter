@@ -4,7 +4,7 @@ var webpack = require('webpack');
 module.exports = {
   devtool: 'eval',
   entry: [
-    'webpack-dev-server/client?http://localhost:3000',
+    'webpack-dev-server/client?http://localhost:3001',
     'webpack/hot/only-dev-server',
     './src/index'
   ],
@@ -16,6 +16,13 @@ module.exports = {
   plugins: [
     new webpack.HotModuleReplacementPlugin()
   ],
+  resolve: {
+    modulesDirectories: [
+      'src',
+      'node_modules'
+    ],
+    extensions: ['', '.json', '.js']
+  },
   module: {
     loaders: [{
       test: /\.js$/,
@@ -24,8 +31,6 @@ module.exports = {
     }, {
       test: /\.scss$/,
       loaders: ['style', 'css', 'autoprefixer', 'sass']
-    },{ 
-      test: /\.css$/, loader: 'style-loader!css-loader'
     }]
   }
 };
