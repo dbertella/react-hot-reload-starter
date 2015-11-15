@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export default class SimpleForm extends Component {
+class SimpleForm extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -27,7 +27,7 @@ export default class SimpleForm extends Component {
     });
     return (
       <div>
-        <h3>FOLDER’S inputs</h3>
+        <h3>Inputs</h3>
         <ul>
           { inputs }
         </ul>
@@ -39,3 +39,4 @@ export default class SimpleForm extends Component {
     );
   }
 }
+export default SimpleForm;

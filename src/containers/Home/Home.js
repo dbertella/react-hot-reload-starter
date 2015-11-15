@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import { SimpleForm } from 'components'
+import { SimpleForm } from 'components';
 
 class Home extends Component {
   render() {

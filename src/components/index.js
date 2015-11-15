@@ -1,4 +1,2 @@
-import Header from './Header/Header';
-import SimpleForm from './SimpleForm/SimpleForm';
-export { Header };
-export { SimpleForm };
+export Header from './header/Header';
+export SimpleForm from './simpleForm/SimpleForm';
